@@ -13,7 +13,7 @@
   <style>
     :root {
       --primary: #ffd058;
-      --secondary: #ffd0587c;
+      --secondary: #ffd058db;
       --font: #f05454;
     }
 
@@ -26,18 +26,17 @@
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
-    }
-
-    p {
-      text-align: center;
+      background-image: url(bgimage.jpg);
+      background-repeat: repeat;
     }
 
     .header {
-      margin: 20px auto;
+      margin: 10px auto;
       width: 50vw;
-      border: 5px solid var(--primary);
+      border: 5px double #fff;
       border-radius: 50px;
-      background-color: var(--secondary);
+      background-color: var(--primary);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       color: var(--font);
       text-align: center;
       padding: 1rem 0;
@@ -46,6 +45,7 @@
     }
 
     .hero {
+      margin: 20px 0;
       position: relative;
       text-align: center;
       color: white;
@@ -74,7 +74,6 @@
       padding: 5px;
       border-radius: 30px;
       border: 5px solid var(--primary);
-
       display: flex;
       justify-content: space-evenly;
     }
@@ -87,6 +86,7 @@
       width: 15%;
       color: var(--font);
       background-color: var(--primary);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       border-radius: 10px;
       text-align: center;
     }
@@ -98,6 +98,9 @@
       border-radius: 10px;
       background-color: var(--secondary);
       color: var(--font);
+    }
+    .category > h1{
+      /* font-size: 1em; */
     }
 
     .menu {
@@ -123,7 +126,7 @@
 
     .menu-item h3 {
       margin: 0.5rem 0;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       color: #333;
     }
 
@@ -199,7 +202,7 @@
     @media (max-width: 480px) {
       .header {
         width: 90vw;
-        font-size: 2rem;
+        font-size: 3rem;
         padding: 0.8rem;
       }
 
